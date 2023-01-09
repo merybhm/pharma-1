@@ -1,33 +1,42 @@
-# Localisation des pharmacies
-Notre projet vise à mettre en place une interface pour localiser les pharmacies qui sont de garde jour et nuit dans une ville sélectionnée.
+# Localisation des pharmacies partie backend 
+Le but de ce projet est de mettre en place une API pour gérer les pharmacies, les emplacements des pharmacies et les pharmacies de garde en fonction du type d'utilisateur (administrateur et client).
 # Fonctionnalités:
-- Chercher une pharmacie par ville et zone
+-Gestion des villes
 
--  Visualiser les pharmacies dans une Map
+-Gestion des zones
 
--  Visualiser la position de l’utilisateur dans la map et mentionner la pharmacie la plus proche
+-Gestion des gardes
 
--  Filtrer la recherche selon le type de la garde
+-Récuperer la liste des pharmacies
 
--  Afficher l’itinéraire vers une pharmacie
+-valider ou refuser les pharmacies en attente de validation en modifiant le champ "état"
+
+-Récuperer l'historique des gardes pour une pharmacie spécifique en utilisant son identifiant.
+
+-Calculer des statistiques sur le nombre de pharmacies par ville et par zone en utilisant des requêtes de groupement de données.
+
+
+-Afficher l’itinéraire vers une pharmacie
+
 # Mise en place du projet
 Pour la mise en place de notre projet, vous aurez besoin de :
 
-- Le back-end 
+-le framework spring boot (serveur et deploiement integré)
 
-- Un éditeur de code (Eclipse)
+-base de données MYSQL
+
+-Editeur de code(Eclipse)
+
 # Déploiement
-Pour déployer ce projet sur votre serveur d'applications, procédez comme suit :
+-Télécharger ou cloner le projet dans votre ordinateur:
 
--Téléchargez le projet sur votre ordinateur
+-Ouvrez-le dans votre ordinateur
 
--Ouvrez-le dans votre éditeur de code 
+-Configurez la connexion à MYSQL dans le fichier de propriétés, spécifiez le nom de la base de Données et le port sur lequel MYSQL s'exécute.
 
--Lancer le back-end
+-Lancer le projet en tant que springBoot Application
 
--Lancer le projet 
+-Tester les api avec postman selon leur url dans les controllers
 
--Ouvrez votre navigateur et accédez à l'application en entrant l'URL suivante : http://localhost:3000/pharmacies
-
-#Auteur
+# Auteur
 Ce projet a été réalisé par ELFAIDLI Nisrine.
